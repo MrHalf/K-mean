@@ -21,7 +21,7 @@ class Kmean:
 	""" Generate ranom number """
 	@classmethod
 	def get_random_points(self, numbers, begin=1, end=10):
-		dataset = [[random.uniform(begin, end), random.uniform(1, 10)] for i in range(numbers)]
+		dataset = [[random.uniform(begin, end), random.uniform(begin, end)] for i in range(numbers)]
 		dataset = [[float("{0:.2f}".format(data)) for data in point] for point in dataset]
 		return dataset
 
